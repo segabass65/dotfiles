@@ -1,0 +1,48 @@
+:root {  
+  --tab-min-height: 20px !important;
+}
+
+#PersonalToolbar,
+#nav-bar,
+#scrollbutton-down
+#scrollbutton-up,
+.tab-audio-button,
+.tab-close-button
+{
+  display: none !important;
+}
+
+#tabbrowser-tabs {
+  max-height: var(--tab-min-height) !important;
+  min-height: var(--tab-min-height) !important;
+}
+
+.tabbrowser-tab[selected] {
+  background-color: var(--tab-selected-outline-color) !important;
+  color: var(--tabpanel-background-color) !important;
+}
+
+.tabbrowser-tab:not([selected]) {
+  background-color: var(--toolbar-field-background-color) !important;
+}
+
+.tab-background {
+  background: inherit !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+}
+
+.tab-content {
+  color: inherit !important;
+  font-family: "JetBrainsMono Nerd Font" !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+}
+
+.tab-label-container {
+  -webkit-mask-image: none !important;
+}
+
+.sidebar-splitter {
+  display: none !important;
+} 
